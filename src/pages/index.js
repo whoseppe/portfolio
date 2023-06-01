@@ -34,6 +34,7 @@ export default function Home() {
                 src={gif}
                 className="w-full sm:w-[600px] h-full"
                 unoptimized={true}
+                alt="whoseppe"
               />
               <p className="font-bold text-black">
                 -- Where dreams turn into pixels, and apps{" "}

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import gif from "../images/g.gif";
-import Manifest from "../components/Manifest";
+import Manifest from "../components/Manifest.js";
 import Header from "../components/Header";
 import Skills from "../components/skills";
 import Projects from "../components/Projects";

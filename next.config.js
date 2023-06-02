@@ -1,11 +1,11 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  // ...
-};
+module.exports = async (phase) => {
+  /** @type {import('next').NextConfig} */
+  const nextConfig = {
+    reactStrictMode: true,
+    swcMinify: true,
+  };
 
-module.exports = (_phase, { defaultConfig }) => {
-  const plugins = [
-    /* ... */
-  ];
-  return plugins.reduce((acc, plugin) => plugin(acc), { ...nextConfig });
+  const defaultConfig = {};
+  return withPlugins([], nextConfig)(phase, { defaultConfig });
+  // return withPlugins([], nextConfig)(phase, { undefined }); // also works
 };

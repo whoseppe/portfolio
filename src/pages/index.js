@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import gif from "../images/g.gif";
 import Manifest from "@/components/manifest";
-import Header from "@/components/header";
+import Header from "@/components/Header";
 import Skills from "@/components/skills";
 import Projects from "@/components/projects";
 import LoadingScreen from "@/components/loadingScreen";

@@ -85,7 +85,7 @@ function Manifest() {
             The Secret.
           </p>
         </div>
-        <div className="h-64 sm:h-52">
+        <div className="h-72 sm:h-52">
           <p className="text-xl font-bold text-black secret opacity-0 ml-2">
             Ah, the secret! Imagine a delightful dance between intuitive
             navigation and visual marvels, where buttons and menus pirouette

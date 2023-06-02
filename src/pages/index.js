@@ -1,11 +1,11 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import gif from "../images/g.gif";
-import Manifest from "@/components/manifest";
+import Manifest from "@/components/Manifest";
 import Header from "@/components/Header";
 import Skills from "@/components/skills";
-import Projects from "@/components/projects";
-import LoadingScreen from "@/components/loadingScreen";
+import Projects from "@/components/Projects";
+import LoadingScreen from "@/components/LoadingScreen";
 import { gsap } from "gsap";
 
 export default function Home() {

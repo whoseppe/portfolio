@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
 
-function projects() {
+function Projects() {
   useEffect(() => {
     gsap.fromTo(
       ".row-one",
@@ -167,4 +167,4 @@ function projects() {
   );
 }
 
-export default projects;
+export default Projects;

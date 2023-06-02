@@ -3,9 +3,10 @@ import Lottie from "lottie-react";
 import { gsap } from "gsap";
 import mario from "./lottie/mario.json";
 
-function loadingScreen() {
+function LoadingScreen() {
   const [windowHeight, setWindowHeight] = useState(0);
   const [windowWidth, setWindowWidth] = useState(0);
+
   useEffect(() => {
     setWindowHeight(window.innerHeight);
     setWindowWidth(window.innerWidth);
@@ -32,4 +33,4 @@ function loadingScreen() {
   );
 }
 
-export default loadingScreen;
+export default LoadingScreen;

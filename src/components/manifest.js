@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
-function manifest() {
+
+function Manifest() {
   useEffect(() => {
     gsap.fromTo(
       ".animate",
@@ -99,4 +100,4 @@ function manifest() {
   );
 }
 
-export default manifest;
+export default Manifest;

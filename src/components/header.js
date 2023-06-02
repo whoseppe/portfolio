@@ -1,15 +1,15 @@
 import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 
-function header() {
-  const header = useRef(null);
-  const subHeader = useRef(null);
+function Header() {
+  const useHeader = useRef(null);
+  const useSubHeader = useRef(null);
   const [lineHeight, setLineHeight] = useState(0);
 
   useEffect(() => {
     const innerHeight = window.innerHeight;
-    const headerHeight = header.current.clientHeight;
-    const subHeaderHeight = subHeader.current.clientHeight;
+    const headerHeight = useHeader.current.clientHeight;
+    const subHeaderHeight = useSubHeader.current.clientHeight;
     const line = innerHeight - headerHeight - subHeaderHeight;
     const delayStart = 4;
     setLineHeight(line);
@@ -64,7 +64,7 @@ function header() {
 
   return (
     <>
-      <div ref={header}>
+      <div ref={useHeader}>
         <div className="p-2">
           <div className="border-2 w-24 flex justify-center items-center">
             <p className="font-bold">whoseppe</p>
@@ -88,7 +88,7 @@ function header() {
           <div className={`w-2 bg-red line-reveal`} />
         </div>
       </div>
-      <div ref={subHeader} className="overflow-hidden h-60">
+      <div ref={useSubHeader} className="overflow-hidden h-60">
         <p className="text-black text-7xl font-bold sub-reveal leading-none tracking-tighter">
           Code.
         </p>
@@ -104,4 +104,4 @@ function header() {
   );
 }
 
-export default header;
+export default Header;

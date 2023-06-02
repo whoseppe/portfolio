@@ -1,7 +1,7 @@
 import Lottie from "lottie-react";
-import morty1 from "../components/lottie/morty1.json";
-import morty2 from "../components/lottie/morty2.json";
-import morty3 from "../components/lottie/morty3.json";
+import morty1 from "./components/lottie/morty1.json";
+import morty2 from "./components/lottie/morty2.json";
+import morty3 from "./components/lottie/morty3.json";
 import Link from "next/link";
 
 export default function Custom404() {
